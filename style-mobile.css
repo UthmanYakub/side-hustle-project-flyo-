@@ -1,6 +1,6 @@
 /* Mobile 375px */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
 	html {
 		font-size: 10px;
 	}
