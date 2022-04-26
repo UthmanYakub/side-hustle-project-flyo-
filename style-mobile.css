@@ -1,0 +1,117 @@
+/* Mobile 375px */
+
+@media screen and (max-width: 375px) {
+	html {
+		font-size: 10px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	/* Nav bar */
+
+	.header--container {
+		padding: 24px 10px;
+	}
+
+	.hero--nav--list :not(:last-child) {
+		padding-right: 23px;
+	}
+
+	.logo img {
+		width: 82px;
+		height: 24px;
+	}
+
+	/* Hero Section */
+
+	.hero--section img {
+		width: 302px;
+		height: 225px;
+	}
+
+	.hero--section--text {
+		width: 100%;
+	}
+
+	.hero--section--title {
+		width: 302px;
+		margin: 23px auto;
+	}
+
+	.hero--section--paragraph {
+		width: 292px;
+		font-size: 12px;
+		padding: 0px 0px;
+		margin: 0px auto 23px;
+	}
+
+	/* Features Section */
+
+	.section--features {
+		grid-template-columns: 1fr;
+		gap: 87px 0px;
+		padding: 0px 38px;
+		margin: 40px 0px 60px;
+	}
+
+	/* HowItWorks Section */
+
+	.section--howItWorks {
+		flex-direction: column;
+		padding: 0 25px;
+	}
+
+	.section--howItWorks--img img {
+		height: 215px;
+		margin: 0px 0px 52px;
+	}
+
+	.section--howItWorks--title {
+		width: 100%;
+	}
+
+	.section--howItWorks--paragraph {
+		width: 100%;
+	}
+
+	/* Testmonials */
+
+	.section--testimonials {
+		grid-template-columns: 1fr;
+		gap: 24px;
+		padding: 150px 22px;
+	}
+
+	.testimonial--box:first-child::before {
+		left: 4px;
+	}
+
+	/* Sign Up */
+
+	.signUp {
+		padding: 40px 25px;
+		bottom: -175px;
+	}
+
+	form {
+		flex-direction: column;
+	}
+
+	input {
+		/* width: 280px; */
+		margin: 8px 0px;
+	}
+
+	/* Footer */
+
+	footer {
+		padding: 280px 27px 42px 27px;
+	}
+
+	.footer--grid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+}

@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: "Open Sans", sans-serif;
+	font-variant: 400;
+	font-feature-settings: 14px;
+	scroll-behavior: smooth;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(218, 28%, 13%);
+}
+
+h2,
+h3,
+.header--container,
+.hero--section--btn,
+.btn {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+}
+
+ul li {
+	list-style: none;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+main {
+	position: relative;
+	padding-bottom: 200px;
+}
+
+/* Reuseable */
+
+.flex {
+	display: flex;
+}
+
+.grid {
+	display: grid;
+}
+
+.col-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.fl-d-c {
+	flex-direction: column;
+}
+
+/* NAVIGATION */
+
+.header--container {
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 45px 80px;
+	/* background: var(--intro-email-bg); */
+	background-color: hsl(217, 28%, 15%);
+}
+
+.header--nav--list li {
+	padding-left: 30px;
+}
+/* Hero Section */
+
+.hero--section {
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+	background: hsl(217, 28%, 15%) url(./img/svg/bg-curvy-desktop.svg) bottom
+		no-repeat;
+}
+
+.hero--section--text {
+	width: 50%;
+	text-align: center;
+}
+
+.hero--section--title {
+	margin: 46px 0;
+}
+
+.hero--section--paragraph {
+	margin-bottom: 46px;
+	padding: 0 35px;
+}
+
+.hero--section--btn,
+.btn {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(198, 60%, 50%);
+	padding: 15px 50px;
+	border: 1px solid hsl(198, 60%, 50%);
+	border-radius: 30px;
+}
+
+/* Features Section */
+
+.section--features {
+	width: 100%;
+	gap: 90px 140px;
+	margin: 130px 0;
+	padding: 0 280px;
+}
+
+.section--features--cards {
+	text-align: center;
+}
+
+.section--features--card_heading {
+	margin: 25px 0 12px 0;
+}
+
+/* Stay Productive Section */
+
+.section--howItWorks {
+	gap: 45px;
+	align-items: center;
+	padding: 0 100px;
+}
+
+.section--howItWorks--title {
+	width: 50%;
+}
+
+.section--howItWorks--paragraph {
+	margin: 20px 0;
+	max-width: 80%;
+}
+
+.section--howItWorks--link {
+	color: hsl(176, 68%, 64%);
+}
+
+/* Testimonials */
+
+.section--testimonials {
+	gap: 40px;
+	padding: 140px;
+}
+
+.testimonial--box {
+	background: hsl(219, 30%, 18%);
+	padding: 45px 40px 0px 45px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.testimonial--box:first-child::before {
+	content: url(./img/png/bg-quotes.png);
+	position: absolute;
+	top: -35px;
+	left: -15px;
+	z-index: -1;
+}
+
+.testimonial--box p {
+	margin-bottom: 25px;
+}
+
+.testimonial--profile--img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.testimonialBy .name {
+	font-size: 15px;
+}
+
+.testimonialBy .post {
+	font-size: 10px;
+}
+
+/* Sign Up */
+
+.signUp {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: hsl(217, 28%, 15%);
+	padding: 50px 50px 40px 50px;
+	border-radius: 5px;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -140px;
+	max-width: 70vw;
+}
+
+.signUp p {
+	margin: 30px 0px 36px;
+}
+
+input {
+	max-width: 380px;
+	height: 50px;
+	padding: 20px 47px;
+	outline: none;
+	border-radius: 30px;
+	margin-right: 10px;
+}
+
+input::placeholder {
+	opacity: 0.4;
+}
+
+/* Last Section */
+
+footer {
+	background-color: hsl(216, 53%, 9%);
+	padding: 200px 80px 60px 80px;
+}
+
+.footer--grid {
+	grid-template-columns: 4fr 3fr 1fr 1fr 2fr;
+	grid-template-rows: auto;
+	column-gap: 50px;
+	margin-top: 50px;
+}
+
+.footer--location {
+	grid-template-columns: 5% 95%;
+}
+
+.footer--location span,
+.footer--contact span {
+	padding-left: 20px;
+}
+
+.footer--contact div {
+	margin-bottom: 26px;
+}
+
+.footer--page--1,
+.footer--page--2 {
+	grid-template-columns: 1fr;
+}
+
+.footer--page--1 a {
+	margin-bottom: 20px;
+}
+
+.footer--page--1 a,
+.footer--page--2 a {
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+}
+/* 
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+} */
