@@ -26,6 +26,11 @@
 
 	/* Hero Section */
 
+	.heri--section {
+		background: hsl(217, 28%, 15%) url(./img/svg/bg-curvy-mobile.svg) bottom
+			no-repeat;
+	}
+
 	.hero--section img {
 		width: 302px;
 		height: 225px;

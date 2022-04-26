@@ -65,7 +65,6 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	padding: 45px 80px;
-	/* background: var(--intro-email-bg); */
 	background-color: hsl(217, 28%, 15%);
 }
 
