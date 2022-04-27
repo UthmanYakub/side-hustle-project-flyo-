@@ -96,8 +96,7 @@ main {
 	padding: 0 35px;
 }
 
-.hero--section--btn,
-.btn {
+.hero--section--btn {
 	color: hsl(0, 0%, 100%);
 	background-color: hsl(198, 60%, 50%);
 	padding: 15px 50px;
@@ -205,13 +204,25 @@ main {
 	margin: 30px 0px 36px;
 }
 
-input {
-	max-width: 380px;
+input:first-child {
+	max-width: 350px;
 	height: 50px;
 	padding: 20px 47px;
 	outline: none;
+	border: 0;
+	border: 1px solid hsl(0, 0%, 100%);
 	border-radius: 30px;
 	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.btn {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(198, 60%, 50%);
+	width: 200px;
+	padding: 15px 30px;
+	border: 1px solid hsl(198, 60%, 50%);
+	border-radius: 30px;
 }
 
 input::placeholder {
@@ -258,4 +269,16 @@ footer {
 .footer--page--2 a {
 	text-decoration: none;
 	color: hsl(0, 0%, 100%);
+}
+
+.footer--icon i {
+	font-size: 14px;
+	border: 1px solid hsl(0, 0%, 100%);
+	border-radius: 100px;
+	padding: 5px;
+	margin: 10px;
+}
+
+.footer--icon i:last-child {
+	margin-right: 0;
 }
